@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto+Slab:wght@700&family=Ubuntu+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto+Slab:wght@700&family=Ubuntu+Condensed&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar{position: absolute;
+    background-color: #09080200;
+   /* width: 15vw; */
+   font-family: 'Ubuntu Condensed', sans-serif;
+   height: 100vh;
+   transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 22px 24px;
+}
+
+.sidebarhide{
+    transform: translate(-230px, 0px);
+position: absolute;
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 15px 0px;
+    font-size: 27px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(46, 41, 41);
+}
+
+.main{
+    
+    /* width: 100vw;
+    height: 88vh;
+    padding-top: 6px;
+    padding-left: 165px;
+    background-color: bisque; */
+    width: 95vw;
+    height: 99vh;
+    padding-top: 90px;
+    padding-left: 203px;
+    background-color: bisque;
+    margin-top: 0px;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+.box1{
+
+    /* background-color: green; */
+    height: 60vh;
+padding: 41px;
+margin: 82px auto;
+display: flex;
+justify-content: space-around;
+}
+
+.mypic img{
+    height: 54vh;
+border-radius: 210px;
+width: 20vw;
+margin: 12px -112px;
+}
+.myinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 44px;
+    margin-bottom: 50px;
+}
+.hello{
+    font-size: 45px;
+}
+.name{
+font-size: 40px;
+font-weight: bold;
+}
+.about{
+font-size: 20px;
+}
+.moreabout{
+font-size: 20px;
+margin: 23px auto;
+}
+
+.buttons button{
+    background-color: rgb(128, 128, 226);
+color: white;
+font-size: 13px;
+border-radius: 11px;
+padding: 3px;
+margin: 13px 10px;
+cursor: pointer;
+border-color: #594141;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+.ham{
+    position: fixed;
+}
+.cross{
+    position: fixed;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 90px;
+   
+}
+.contact-me p{
+    margin-left: 30px;
+    margin-top: 7px;
+}
+.contact-me p i{
+color: rgb(216, 51, 79);
+font-size: 22px;
+
+}
+.social-icons{
+    width: 72vw;
+    margin-left: 31px;
+    padding: -1px;
+    margin-top: -3px;
+    margin-bottom: 15px;
+}
+.social-icons a i{
+
+    text-decoration: none;
+    font-size: 23px;
+    display: inline-block;
+    transition: transform 0.5s;
+    margin-top: 25px ;
+    /* color: rgb(223, 197, 165); */
+}
+
+
+.social-icons a i:hover{
+    color: rgb(216, 51, 79);
+    transform: translateY(-5px);
+
+}
+.copyright {
+    width: 100vw;
+    text-align: center;
+    margin: 0px;
+    background-color: #110808de;
+    height: 6vh;
+    padding-top: 21px;
+    font-size: 20px;
+    color: #dcdee68c;
+}
+.copyright i {
+color: red;
+}
+
+.sub-title{
+    color: #472424;
+    font-size: 38px;
+    margin-left: 27px;
+}
+
+.mb-3{
+    padding: 0px;
+}
+@media screen and (max-width: 750px) {
+  *{background-color: pink;
+    }
+
+   
+}

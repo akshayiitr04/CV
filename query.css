@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto+Slab:wght@700&family=Ubuntu+Condensed&display=swap');
+*{
+    background-color: bisque;
+}
+.contactform{ padding: 30px 118px;
+    
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.contactform h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 38px;
+}
+.contactform form div{
+   display: flex;
+   flex-direction: column;
+    padding: 20px 0px;
+}
+.form-text{
+    color: #7168d7;
+    font-size: 11px;
+}
+#clientname{
+    padding: 4px;
+}
+#clientemail{
+width: 32vw;
+padding: 4px;
+}
+#clientphone{
+   
+        width: 6vw;
+        padding: 4px;
+    
+}
+.form-check-label{
+   
+    margin: 10px;
+}
+.btn-primary{
+    background-color: rgb(128, 128, 226);
+color: white;
+font-size: 13px;
+border-radius: 11px;
+padding: 6px;
+margin: 13px 10px;
+cursor: pointer;
+border-color: #594141;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+#form-check{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control{
+    width: 20vw;
+    border: 3px solid #675c6c;
+}
+
+#msg{
+    color: rgb(92, 91, 94);
+    display: block;
+
+}

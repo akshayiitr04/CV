@@ -1,0 +1,51 @@
+.intro p{
+font-style: italic;
+padding: 26px;
+font-size: 25px;
+}
+.main h1{
+    font-style: italic;
+    font-size: 30px;
+}
+.skillitem{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.skill{
+    background-color: red;
+    width: 400px;
+    height: 6px;
+    border: 2px solid black;
+
+}
+.h{
+    background-color: rgb(126, 118, 92)
+    ;
+    width: 500px;
+}
+.ff{
+    background-color: aqua;
+    width: 450px;
+}
+.ef{
+    background-color: aqua;
+width: 400px;
+}
+
+.s{
+    background-color: aqua;
+    width: 350px;
+}
+.f{
+    background-color: aqua;
+width: 300px;
+}
+.t{
+    background-color: aqua;
+    width: 50px;
+}
+.si{
+    background-color: aqua;
+    width: 380px;
+}

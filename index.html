@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshay vishwakarma---Web developer</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/c74dacf99e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarhide">
+        <!-- Akshay -->
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+
+            <li><a href="/my_skills.html">My skills</a></li>
+
+            <li><a href="CV">CV</a></li>
+
+            <li><a href="query.html">Query form</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="hamburger">
+          <img src="ham2.jpg" alt="" class="ham" width="23px" />
+          <img src="cross.png" alt="" class="cross" width="23px" />
+        </div>
+        <div class="box1">
+          <div class="myinfo">
+            <div class="hello">Hello, myself</div>
+            <div class="name">Akshay vishwakarma</div>
+            <div class="about">Developer, Reader, Passionate</div>
+            <div class="moreabout">
+              I am a developer and tea lover. I belongs to Gorakhpur,UP. Nature
+              lover.
+            </div>
+            <div class="buttons">
+             
+              <a href="/query.html"> <button>Query form</button></a>
+              <a href="/cv.txt"><button>Download CV</button></a>
+            </div>
+          </div>
+          <div class="mypic">
+            <img src="av3.jpg" alt="" srcset="" width="200px" height="1000px" />
+          </div>
+        </div>
+      </div>
+      </div>
+
+  
+      <div class="container">
+           <div class="contact-me">
+          <h1 class="sub-title">Contact me</h1>
+          <p>
+            <i class="fa-sharp fa-solid fa-paper-plane"></i>
+            akshayvishwakarma900@gmail.com
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-square-phone"></i> +91-9807077204
+          </p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/akshay-vishwakarma-755189250/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/akshay_vish900"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          </div>
+           </div>
+
+      <div class="copyright">
+        Copyright &copy Akshay. Made with
+        <i class="fa-sharp fa-solid fa-heart"></i>
+      </div>
+   
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "<https://script.google.com/macros/s/AKfycbyK3r_W7mstnGtE5L3QEVEE65RhvqU6VHF6GGrMuH4Ijcv6cV6gCVBFnJEDO4JJdGlX/exec>";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

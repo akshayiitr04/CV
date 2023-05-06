@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay vishwakarma---Web developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    
+  
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <!-- Akshay -->
+            <nav>
+                <ul>
+                    <li> <a href="/index.html">Home</a></li> 
+                  
+                    <li><a href="/my_skills.html">My skills</a></li>
+
+                    <li><a href="CV">CV</a></li>
+
+                    <li><a href="query.html">Query</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+          <div class="hamburger">
+            <img src="ham2.jpg" alt="" class="ham" width="23px">
+            <img src="cross.png" alt="" class="cross" width="23px">
+        </div>
+            <div class="contactform">
+                <h1>Contact me for work / General queries</h1>
+                <form name="submit-to-google-sheet">
+
+                    <div class="mb-3">
+                        <label for="clientname" class="form-label">Name</label>
+                        <input type="name" name="name" class="form-control" id="clientname" aria-describedby="nameHelp" placeholder="Your Name" required>
+                      
+                      </div>
+
+                    <div class="mb-3">
+                      <label for="clientemail" class="form-label">Email address</label>
+                      <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder="Your Email" required>
+                   
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Phone</label>
+                      <input type="phone" name="phone" class="form-control" id="clientphone" placeholder="Your Phone" required>
+                     
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="clientmessage" class="form-label">Message</label>
+                      <textarea name="message" class="form-control" id="" cols="27" rows="5" placeholder="Your message"></textarea>
+
+                      <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                    </div>
+
+
+                    <div class="mb-3" id="form-check">
+                      <input type="checkbox" name="checkbox" class="form-check-input" id="client">
+                      <label class="form-check-label" for="client">I want to work with you in ARP</label>
+                    </div>
+                    <button type="submit" class="btn-primary button">Submit</button>
+                  </form>
+                  <span id="msg">
+                    Hello  
+                  </span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL = '<https://script.google.com/macros/s/AKfycbyK3r_W7mstnGtE5L3QEVEE65RhvqU6VHF6GGrMuH4Ijcv6cV6gCVBFnJEDO4JJdGlX/exec>'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML =""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    </body>
+</html>
